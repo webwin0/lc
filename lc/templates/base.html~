@@ -5,7 +5,7 @@
     {% block css %}<link rel="stylesheet" href="{{ MEDIA_URL }}css/main.css">{% endblock %}
 </head>
 <body>
-    <div id="top">Lohika community</div>
+    <div id="top">My Blog</div>
     <div id="navi">{% block navi %}{% endblock %}</div>
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">{% block footer %}{% endblock %}</div>
