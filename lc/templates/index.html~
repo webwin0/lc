@@ -6,10 +6,11 @@
 
 {% block navi %}
  <a href="{% url 'index' %}">home</a>
- {% comment %}
+ 
  <a href="{% url 'calendar' %}">calendar</a>
  <a href="{% url 'community' %}">communities</a>
- {% if user.is_authenticated %}
+{% comment %} 
+{% if user.is_authenticated %}
     <a href="{% url accounts_profile %}">profile</a> - <a href="{% url accounts_logout %}">logout</a>
  {% else %}
      <a href="{% url accounts_login %}">login</a> - <a href="{% url accounts_register %}">register</a>

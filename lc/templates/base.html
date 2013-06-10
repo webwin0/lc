@@ -1,13 +1,95 @@
-<html>
+{% load static %}
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>{% block title %}{% endblock %}</title>
-    {% block js %}{% endblock %}
-    {% block css %}<link rel="stylesheet" href="{{ MEDIA_URL }}css/main.css">{% endblock %}
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>{% block title %}{% endblock %}</title>
+
+{% block js %}<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"></script>{% endblock %}
+{% block css %}<link rel="stylesheet" href="{% static 'css/styles.css' %}">{% endblock %}
+
 </head>
 <body>
-    <div id="top">Lohika community</div>
-    <div id="navi">{% block navi %}{% endblock %}</div>
-    <div id="content">{% block content %}{% endblock %}</div>
-    <div id="footer">{% block footer %}{% endblock %}</div>
+
+
+
+                    <div class="content top">
+                    	<a href="/" class="logo"><img src="{% static 'img/logo.gif' %}" width="124" height="79" alt="" />accelerate innovation</a>
+								
+                                                        
+        {% block navi %}{% endblock %}
+
+						<ul class="menu1lvl"><li><span class="l"></span><a href="/"  >Головна</a><span class="r"></span></li><li><span class="l"></span><a href="company/"  >Компанія</a><span class="r"></span></li><li><span class="l"></span><a href="career/"  >Кар'єра</a><span class="r"></span></li><li class="active"><span class="l"></span><a href="vacancies/"  >Вакансії</a><span class="r"></span></li><li><span class="l"></span><a href="news/"  >Новини та події</a><span class="r"></span></li><li><span class="l"></span><a href="contacts/"  >Контакти</a><span class="r"></span></li></ul>
+						<div class="clearer"></div>
+						
+						<ul class="menu2lvl"><li><a href="vacancies/list/" onfocus="blurLink(this);"  >Вакансії</a></li><li><a href="vacancies/referral/" onfocus="blurLink(this);"  >Referral program</a></li><li><a href="vacancies/hr/" onfocus="blurLink(this);"  >Наша команда</a></li></ul><ul class="menu2lvl fixed" style="display: none">
+                <li><a href="vacancies/list/73/#" class="to-top">&uarr;</a></li><li><a href="vacancies/list/" onfocus="blurLink(this);"  >Вакансії</a></li><li><a href="vacancies/referral/" onfocus="blurLink(this);"  >Referral program</a></li><li><a href="vacancies/hr/" onfocus="blurLink(this);"  >Наша команда</a></li></ul>
+                    </div>
+			        <div class="content vac-list"><!--TYPO3SEARCH_begin--><h2 class="csc-firstHeader">Вакансії</h2><div class="vac-single">
+    <div class="col2">
+        <div class="col2-l">
+	    {% block content %}{% endblock %}
+            <h1>Python UI Developer , Львів</h1>
+
+            <p><strong>PURPOSE OF THE JOB</strong>
+</p>
+<p>IronPort offers the C-Series Email Security Appliance, the S-Series Web Security Appliance and the M-Series Security Management Appliance. The core strengths of IronPort's solutions are IronPort's SenderBase®; the world's largest email and Web threat detection database, and AsyncOS® a customized operating system based on FreeBSD that has been designed from the ground up for application layer security. IronPort's products protect 8 of the 10 largest ISPs in the world, 3 of the 4 US Armed Forces, and more than 40% of the 100 largest corporations in the world. IronPort has also been recognized as an industry leader by every major industry analyst firm including the Gartner Group.
+</p>
+<p>UI team is responsible for design and implementation of Web user interface for managing appliance.
+</p>
+<p><strong><strong>MAIN TASKS AND RESPONSIBILITIES</strong></strong></p><ul> <li>Analyze feature requirements and write specification based on design provided by User-Experience team</li> <li>Develop Web UI interface using Python web-framework, front-end development using JavaScript and YUI framework.</li> <li>Obtain tasks from Team Leader supervisor and execute the tasks within set deadlines and specified quality objectives.</li> <li>Proactively address customer concerns and prevent problems from arising</li> </ul><p><strong>EDUCATION, SKILLS AND EXPERIENCE</strong></p><ul> <li>3+ years of extensive experience in web development using Python/PHP web-frameworks.</li> <li>Front-end development using JavaScript and JS-frameworks (YUI is a plus)</li> <li>Extensive knowledge of HTML, CSS, cross-browser compatibility, web security best practices, design patterns</li> <li>Working proficiency in Linux environment</li> <li>Experience working with Version Control Systems</li> <li>At least intermediate level of English</li> </ul><p><strong>PERSONAL COMPETENCIES</strong></p><ul> <li>Fast learning skills</li> <li>Result-oriented skills</li> <li>Responsibility</li> <li>Verbal/written communication skills</li> <li>Team-playing skills<strong></strong></li> <li>Personal motivation</li> </ul><p><em>Please send you CV on <a href="mailto:job_lviv@lohika.com" >job_lviv@lohika.com</a> or contact Lohika Recruitment Team with more questions!</em>
+</p>
+<p><em>You can also fill in <a href="fileadmin/Candidate_s_Form_for_website.docx" target="_blank" >Lohika Candidate's Form</a>.</em></p>
+        </div>
+        
+        <div class="col2-r">
+        
+            <h3>Vacancies in Львів</h3>
+            
+            <ul class="newsm">
+
+                                <li>
+                    <a href="vacancies/list/57/" title="Automation QA Middle Engineer, Львів">Automation QA Middle Engineer</a>
+                </li>
+                                <li>
+                    <a href="vacancies/list/59/" title="Java Senior Engineer, Львів">Java Senior Engineer</a>
+                </li>
+                                <li>
+                    <a href="vacancies/list/60/" title="Java Senior Developer/Architect, Львів">Java Senior Developer/Architect</a>
+                </li>
+                                <li>
+                    <a href="vacancies/list/68/" title="C++ Team Lead, Львів">C++ Team Lead</a>
+                </li>
+                                <li>
+                    <a href="vacancies/list/69/" title="Java Middle/Senior Engineer, Львів">Java Middle/Senior Engineer</a>
+                </li>
+                                <li>
+                    <a href="vacancies/list/70/" title="Python Team Lead, Львів">Python Team Lead</a>
+                </li>
+                                <li>
+                    <a href="vacancies/list/71/" title="Python Team Lead, Львів">Python Team Lead</a>
+                </li>
+                                <li>
+                    <a href="vacancies/list/72/" title="Senior/Middle Automation QA engineer , Львів">Senior/Middle Automation QA engineer </a>
+                </li>
+                            </ul>
+            
+        </div>
+        
+        <div class="clearer"></div>
+    </div>
+</div><!--TYPO3SEARCH_end--></div>
+                    <div class="clearer"></div>
+                    <div class="copyright border"> 
+			{% block footer %}{% endblock %}           
+</div>
+
+
+
+
 </body>
 </html>
