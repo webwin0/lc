@@ -8,6 +8,7 @@ from django.core.mail import send_mail, mail_admins
 
 
 def index(request):
+    print request
     meeting = Meeting.objects.filter(published=True).order_by('-id')
 
     paginator = Paginator(meeting, 2)

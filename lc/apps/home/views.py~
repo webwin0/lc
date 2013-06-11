@@ -10,7 +10,7 @@ from django.core.mail import send_mail, mail_admins
 def index(request):
     meeting = Meeting.objects.filter(published=True).order_by('-id')
 
-    paginator = Paginator(entries, 2)
+    paginator = Paginator(meeting, 2)
 
     page_num = request.GET.get('page', 1)
 

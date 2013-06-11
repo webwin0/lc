@@ -23,11 +23,16 @@
                                                         
         {% block navi %}{% endblock %}
 
-						<ul class="menu1lvl"><li><span class="l"></span><a href="/"  >Головна</a><span class="r"></span></li><li><span class="l"></span><a href="company/"  >Компанія</a><span class="r"></span></li><li><span class="l"></span><a href="career/"  >Кар'єра</a><span class="r"></span></li><li class="active"><span class="l"></span><a href="vacancies/"  >Вакансії</a><span class="r"></span></li><li><span class="l"></span><a href="news/"  >Новини та події</a><span class="r"></span></li><li><span class="l"></span><a href="contacts/"  >Контакти</a><span class="r"></span></li></ul>
+	<ul class="menu1lvl">
+		<li><span class="l"></span><a href="/"  >Головна</a><span class="r"></span></li>
+		<li><span class="l"></span><a href="company/"  >Компанія</a><span class="r"></span></li>
+		<li><span class="l"></span><a href="career/"  >Кар'єра</a><span class="r"></span></li>
+		<li class="active"><span class="l"></span><a href="vacancies/"  >Вакансії</a><span class="r"></span></li>
+		<li><span class="l"></span><a href="news/"  >Новини та події</a><span class="r"></span></li>
+		<li><span class="l"></span><a href="contacts/"  >Контакти</a><span class="r"></span></li>
+	</ul>
 						<div class="clearer"></div>
 						
-						<ul class="menu2lvl"><li><a href="vacancies/list/" onfocus="blurLink(this);"  >Вакансії</a></li><li><a href="vacancies/referral/" onfocus="blurLink(this);"  >Referral program</a></li><li><a href="vacancies/hr/" onfocus="blurLink(this);"  >Наша команда</a></li></ul><ul class="menu2lvl fixed" style="display: none">
-                <li><a href="vacancies/list/73/#" class="to-top">&uarr;</a></li><li><a href="vacancies/list/" onfocus="blurLink(this);"  >Вакансії</a></li><li><a href="vacancies/referral/" onfocus="blurLink(this);"  >Referral program</a></li><li><a href="vacancies/hr/" onfocus="blurLink(this);"  >Наша команда</a></li></ul>
                     </div>
 			        <div class="content vac-list"><!--TYPO3SEARCH_begin--><h2 class="csc-firstHeader">Вакансії</h2><div class="vac-single">
     <div class="col2">
@@ -84,7 +89,7 @@
     </div>
 </div><!--TYPO3SEARCH_end--></div>
                     <div class="clearer"></div>
-                    <div class="copyright border">&copy; 2013 Lohika. Всі права застережено 
+                    <div class="copyright border"> 
 			{% block footer %}{% endblock %}           
 </div>
 

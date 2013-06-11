@@ -1,14 +1,18 @@
 {% extends "base.html" %}
+{% load custom_tags %}
 
 {% block title %}
  Index Page
 {% endblock %}
 
 {% block navi %}
- <a href="{% url 'index' %}">home</a>
- 
- <a href="{% url 'calendar' %}">calendar</a>
- <a href="{% url 'community' %}">communities</a>
+	<ul class="menu1lvl">
+		<li class="{% navactive request 'index' %}"><span class="l"></span><a href="{% url 'index' %}"  >Головна</a><span class="r"></span></li>
+		<li class="{% navactive request 'calendar' %}"><span class="l"></span><a href="{% url 'calendar' %}"  >Календар</a><span class="r"></span></li>
+		<li class="{% navactive request 'community' %}"><span class="l"></span><a href="{% url 'community' %}"  >Спільноти</a><span class="r"></span></li>
+		
+	</ul>
+
 {% comment %} 
 {% if user.is_authenticated %}
     <a href="{% url accounts_profile %}">profile</a> - <a href="{% url accounts_logout %}">logout</a>

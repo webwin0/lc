@@ -138,6 +138,7 @@ INSTALLED_APPS = (
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
 # See http://docs.djangoproject.com/en/dev/topics/logging for
+
 # more details on how to customize your logging configuration.
 LOGGING = {
     'version': 1,
@@ -162,3 +163,8 @@ LOGGING = {
         },
     }
 }
+
+TEMPLATE_CONTEXT_PROCESSORS  = (
+    'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+)
