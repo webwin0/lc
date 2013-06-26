@@ -1,10 +1,11 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response,redirect
 from lc.apps.data.models import Meeting
 from django.template import RequestContext
 from django.db import backend, connections
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from django.core.mail import send_mail, mail_admins
+from django.views.decorators.http import require_http_methods, require_safe, condition
 
 
 def index(request):
@@ -27,8 +28,16 @@ def index(request):
     }
     return render_to_response('index.html', ctx, context_instance=RequestContext(request))
 
-def calendar(request):
+def calendar(request):	
     return render_to_response('calendar.html', context_instance=RequestContext(request))
+
+
+def calendar_inner(request, num=1):
+    import pprint
+    pprint.pprint(request)
+    return render_to_response('calendar.html', context_instance=RequestContext(request))
+
+
 
 def community(request):
     return render_to_response('community.html', context_instance=RequestContext(request))

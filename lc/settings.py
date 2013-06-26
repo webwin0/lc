@@ -7,7 +7,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 PROJECT_DIR = Path(__file__).ancestor(1)
-print PROJECT_DIR
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
